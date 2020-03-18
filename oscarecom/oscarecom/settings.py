@@ -25,7 +25,7 @@ SECRET_KEY = 'rinn_$p6i-=!6ne@74j&%ijfgo&=rvn=$v9+(*i_j99yzb7bw+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['0.0.0.0','localhost']
 
 
 # Application definition
@@ -74,14 +74,18 @@ WSGI_APPLICATION = 'oscarecom.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+DBNAME=os.environ.get('Postgre_dbUserName')
+DBUSER=os.environ.get('Postgre_dbUserName')
+DBPASSWORD=os.environ.get('Postgre_dbPassword')
+DBIP=os.environ.get('Postgre_privateIP')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-		'USER': '',
-		'PASSWORD': '',
-		'HOST':''
+        'NAME': DBNAME,
+		'USER': DBUSER,
+		'PASSWORD': DBPASSWORD,
+		'HOST': DBIP,
+                'PORT':'5432'
     }
 }
 
