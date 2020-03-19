@@ -25,7 +25,7 @@ SECRET_KEY = 'rinn_$p6i-=!6ne@74j&%ijfgo&=rvn=$v9+(*i_j99yzb7bw+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'oscarecom.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-DBNAME=os.environ.get('Postgre_dbUserName')
+DBNAME=os.environ.get('Postgre_dbName')
 DBUSER=os.environ.get('Postgre_dbUserName')
 DBPASSWORD=os.environ.get('Postgre_dbPassword')
 DBIP=os.environ.get('Postgre_privateIP')
