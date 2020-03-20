@@ -67,6 +67,9 @@ def adduser(request):
 def home(request):	
 	return render(request, "home.html", {} )
 
+def index(request):
+	return render(request, "index.html", {})
+
 def list(request):
 	users = UserDetails.objects.all()
 	return render(request, 'list.html', {'users':users})

@@ -1,0 +1,32 @@
+body{
+background:#fff;
+width:100%
+}
+
+
+ul.err-area li
+{
+color:red
+}
+.data-table{
+float:left;
+display:inline-block
+}
+.data-table table{
+border-collapse:collapse;
+border:1px solid #ddd;
+}
+.page-data{
+float:left;
+display:inline-block;
+}
+.title { display:block;
+ font-size: 100px;
+  margin:40px 10px;
+   text-align: center}
+.message {
+text-align: center}
+.brand {
+display:block;
+ text-align: center
+ }
