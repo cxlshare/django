@@ -29,6 +29,9 @@ text-align: center}
 .brand {
 display:block;
  text-align: center;
+
+}
+.small{
  width: 587px;
- height: 330.188px;
+margin-left: 65%;
 }
