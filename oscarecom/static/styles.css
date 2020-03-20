@@ -28,5 +28,10 @@ display:inline-block;
 text-align: center}
 .brand {
 display:block;
- text-align: center
- }
+ text-align: center;
+
+}
+.small{
+ width: 587px;
+
+}
